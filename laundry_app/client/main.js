@@ -1,22 +1,35 @@
-import { Template } from 'meteor/templating';
-import { ReactiveVar } from 'meteor/reactive-var';
+import React from 'react';
+import ReactDOM from 'react-dom';
+import {Meteor} from 'meteor/meteor';
+import {Participants} from './../imports/api/participants';
+import {Tracker} from 'meteor/tracker';
 
-import './main.html';
 
-Template.hello.onCreated(function helloOnCreated() {
-  // counter starts at 0
-  this.counter = new ReactiveVar(0);
-});
 
-Template.hello.helpers({
-  counter() {
-    return Template.instance().counter.get();
-  },
-});
+import Footer from './../imports/components/Footer';
+import Header from './../imports/components/Header';
+import Parallax from './../imports/components/Parallax';
+import Body from './../imports/components/Body';
+import Maps from './../imports/components/Map';
 
-Template.hello.events({
-  'click button'(event, instance) {
-    // increment the counter when button is clicked
-    instance.counter.set(instance.counter.get() + 1);
-  },
-});
+
+
+
+
+
+Meteor.startup(() => {
+  Tracker.autorun(() => {
+      let jsx = (
+      <div>
+        <Parallax />
+        <Body />
+        <Maps
+        containerElement={<div style={{ height: 100+'%' }} />}
+        mapElement={<div style={{ height: 100+'%'}} />} 
+        />
+        <Footer />
+      </div>
+    )
+    ReactDOM.render(jsx, document.getElementById('app'));
+  })
+})

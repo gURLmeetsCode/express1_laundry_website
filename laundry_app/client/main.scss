@@ -1,0 +1,118 @@
+/* CSS declarations go here */
+
+$mainBlue: #05355D;
+$mainGrey: #F5F5F5;
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+
+body{
+  color: #555555;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+
+.parallax{
+    background: url('https://lh5.googleusercontent.com/-XNfelPgZ_Og/TXlUZU82dEI/AAAAAAAAEno/HL2nCpR6ZwM/s1600/IMG_8162.png') repeat fixed 100%;
+    &--inner{
+        padding-top: 20%;
+        padding-bottom: 20%;
+        background: rgba(5, 53, 93, 0.9);
+    }
+
+    &__text-content{
+        top:50%;
+        transform: translateY(30%);
+        left: 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    &__title{
+        font-weight: 200;
+        color: #FFF;
+        font-size: 4.9rem;
+        margin: 0;
+        font-family: 'Roboto';
+    }
+
+    &__subtitle{
+        font-weight: 200;
+        color: #FFF;
+        font-size: 1.4rem;
+        margin: 0;
+    }
+}
+
+.btn{
+    border-style: solid;
+    border-color: #FFF;
+    border-width: thin;
+    color: #FFF;
+    text-decoration: none;
+    padding: .75rem 1.2rem;
+    display: inline-block;
+
+
+
+    &--small{
+    font-size: 1rem;
+    padding: .75rem .7rem;
+    margin-top: 30px;
+    }
+
+}
+
+.tagline{
+  max-width: 60%;
+  background: $mainGrey;
+
+}
+
+.tagline-summary{
+  font-size: 30px;
+  font-weight: 100;
+}
+
+.features-title{
+  font-size: 26px;
+  margin-bottom: 5px;
+}
+
+.wrapper{
+  display: flex;
+}
+
+
+.site-footer{
+    background-color: $mainBlue;
+    color: #FFF;
+    padding: .5rem 0;
+    text-align: center;
+
+    &__text{
+        display: block;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        font-weight: 200;
+
+        @mixin atMedium {
+            display: inline;
+            margin-bottom: 0;
+            margin-right: 1.4rem;
+        }
+    }
+}
+
+.social_icon{
+  max-width: 50px;
+  max-height: 50px;
+}

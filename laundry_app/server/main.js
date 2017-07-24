@@ -1,5 +1,7 @@
-import { Meteor } from 'meteor/meteor';
+import {Meteor} from 'meteor/meteor';
+import {Participants} from './../imports/api/participants';
 
-Meteor.startup(() => {
-  // code to run on server at startup
+
+Meteor.startup(function(){
+  
 });
