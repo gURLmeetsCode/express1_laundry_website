@@ -2,8 +2,7 @@
   "name": "laundry_app",
   "private": true,
   "scripts": {
-    "start": "meteor run",
-    "build": "meteor build"
+    "start": "meteor run"
 
   },
   "dependencies": {
