@@ -1,8 +1,9 @@
 
-$mainBlue: #05355D;
+$mainBlue: rgb(34, 69, 120);
 $mainGrey: #F5F5F5;
-$mainPurple: #3A2F7A;
+$mainPurple:  #3A2F7A;
 $mainAqua: rgba(128, 218, 213, 1.5);
+// 202, 225, 222 1.2
 
 * {
   margin: 0;
@@ -13,6 +14,8 @@ img{
     max-width: 100%;
     height: auto;
 }
+
+
 
 
 body{
@@ -66,6 +69,7 @@ body{
     text-decoration: none;
     padding: .75rem 1.2rem;
     display: inline-block;
+    transition: background .5s ease;
 
 
 
@@ -73,6 +77,10 @@ body{
     font-size: 1rem;
     padding: .75rem .7rem;
     margin-top: 30px;
+    }
+
+    &--small:hover{
+      background: $mainAqua;
     }
 
 }

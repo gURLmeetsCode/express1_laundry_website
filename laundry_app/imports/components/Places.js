@@ -1,7 +1,6 @@
 import React from 'react';
 
 
-
 export default class Reviews extends React.Component{
   constructor(props){
     super(props);
@@ -25,7 +24,7 @@ export default class Reviews extends React.Component{
       }, (place, status) => {
         if (status === google.maps.places.PlacesServiceStatus.OK) {
            console.log(place.reviews)
-          this.setState({places:place.reviews})
+          this.setState({places:place.reviews});
         }
       })
     }
@@ -33,6 +32,7 @@ export default class Reviews extends React.Component{
     const { places } = this.state;
     return(
       <div className="wrapper wrapper--colored">
+      <div id="map"></div>
         <p className="wrapper--reviews">
         <h2 className="section-title section-title--colored">Here is what our customers are saying:</h2>
           {
