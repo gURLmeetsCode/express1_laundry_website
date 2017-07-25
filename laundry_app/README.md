@@ -1,61 +1,20 @@
 # Project Title
 
-One Paragraph of project description goes here
+Express 1 Laundromat
 
 ## Description
 
-
+Developed a single page application with modern UI technologies React and Meteor. The website focuses on intuitive user navigation for a fluid user experience. Highlighted features include full display hours of operation, Google Maps Marker, full list of services and prices, external navigation to yelp reviews, reviews feed from yelp API, and user mailing list options.  The application was built with Meteor,  React, Google Maps API, Yelp API, MongoDb.
 ## Built With
 
-* []()
-* []()
-* []()
+* [Meteor]("https://www.meteor.com/") - Dev Platform
+* [MongoDb]("https://www.mongodb.com/") - Database
+* [React]("https://facebook.github.io/react/") - MVC Framework
+* [Google Places API]("https://developers.google.com/places/") - API used to fetch business reviews and maps
+* [Fourseven:Scss]("https://github.com/fourseven/meteor-scss")- CSS Preprocessor
 
 ## Author
 
-<!-- // function getReviews(){
-//   $.ajax({
-//     type: 'GET',
-//     url: 'http://jsonplaceholder.typicode.com/users',
-//     dataType: 'json',
-//     cache: false,
-//     sucess: function(data){
-//       this.setState({reviews: data}, function(){
-//         console.log(this.state);
-//       });
-//     }.bind(this),
-//       error:function(xhr, status, err){
-//       console.log(err);
-//     }
-//   })
-// } -->
-<!-- this.setState({
-  reviews: response
-}) -->
+Natasha Kelly
 
-
-<!-- $.ajax({
-   type: 'GET',
-   url: 'http://jsonplaceholder.typicode.com/users',
-   dataType: 'json',
-   success: function(data) {
-     console.log(data)
-     this.setState({reviews: data});
-   }.bind(this),
-   error: function(xhr, status, err) {
-     console.error(this.props.url, status, err.toString());
-   }.bind(this)
- });
-}
-render: function(){
-let reviewItems = this.state.reviews.map(function(item){
-  return (
-    <p key={item.id}><strong>{item.name}</strong> {item.email}</p>
-  )
-});
-return(
-  <div>
-    {reviewItems}
-  </div>
-)
-} -->
+Please contact me for any issues with this repo. [gURLmeetsCode]("https://github.com/gURLmeetsCode")
