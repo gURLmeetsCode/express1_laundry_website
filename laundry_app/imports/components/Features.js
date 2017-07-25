@@ -33,7 +33,7 @@ import React from 'react';
 
   function renderSchedule (scheduleList){
         return schedule.map(function(item){
-          return <p key={item.day}><strong>{item.day}</strong><br/>{item.time}</p>
+          return <p className="features--schedule" key={item.day}><strong className="features--day">{item.day}</strong><br/>{item.time}</p>
         });
       };
 
@@ -41,7 +41,7 @@ import React from 'react';
 export default class Features extends React.Component{
   render(){
     return(
-      <div>
+      <div className="features">
         <div>
           <h4 className="features-title">Hours of Operation</h4>
           {renderSchedule(schedule)}

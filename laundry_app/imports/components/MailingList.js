@@ -28,7 +28,7 @@ handleSubmit = (e) => {
 export default class Email extends React.Component{
   render(){
     return(
-      <div>
+      <div className="site-footer__text">
       <h4>Join Our Mailing List!</h4>
         <p> Stay updated on services hours, monthly raffle prizes and more.</p>
           <form onSubmit={handleSubmit}>

@@ -4,13 +4,11 @@ import {Meteor} from 'meteor/meteor';
 import {Participants} from './../imports/api/participants';
 import {Tracker} from 'meteor/tracker';
 
-
-
 import Footer from './../imports/components/Footer';
-import Header from './../imports/components/Header';
 import Parallax from './../imports/components/Parallax';
-import Body from './../imports/components/Body';
-import Maps from './../imports/components/Map';
+import Maps from './../imports/components/Maps';
+import Reviews from './../imports/components/Places';
+import Welcome from './../imports/components/Welcome';
 
 
 
@@ -22,11 +20,9 @@ Meteor.startup(() => {
       let jsx = (
       <div>
         <Parallax />
-        <Body />
-        <Maps
-        containerElement={<div style={{ height: 100+'%' }} />}
-        mapElement={<div style={{ height: 100+'%'}} />} 
-        />
+        <Welcome />
+        <Maps />
+        <Reviews />
         <Footer />
       </div>
     )

@@ -1,7 +1,8 @@
-/* CSS declarations go here */
 
 $mainBlue: #05355D;
 $mainGrey: #F5F5F5;
+$mainPurple: #3A2F7A;
+$mainAqua: rgba(128, 218, 213, 1.5);
 
 * {
   margin: 0;
@@ -15,8 +16,10 @@ img{
 
 
 body{
-  color: #555555;
+  color: #FFF;
   font-family: Helvetica, Arial, sans-serif;
+  font-weight: 200;
+  font-size: 1.3rem;
 }
 
 
@@ -25,7 +28,7 @@ body{
     &--inner{
         padding-top: 20%;
         padding-bottom: 20%;
-        background: rgba(5, 53, 93, 0.9);
+        background: rgba(58, 47, 122, 0.9);
     }
 
     &__text-content{
@@ -52,9 +55,12 @@ body{
     }
 }
 
+
+
+
 .btn{
     border-style: solid;
-    border-color: #FFF;
+    border-color: rgba(128, 218, 213, 1.5);
     border-width: thin;
     color: #FFF;
     text-decoration: none;
@@ -72,29 +78,72 @@ body{
 }
 
 .tagline{
-  max-width: 60%;
   background: $mainGrey;
-
 }
+
 
 .tagline-summary{
   font-size: 30px;
   font-weight: 100;
 }
 
+.features{
+  background: $mainPurple;
+}
+
 .features-title{
   font-size: 26px;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
+  color: $mainGrey;
+}
+
+.features--day{
+  color: $mainAqua;
+}
+
+.features--schedule{
+  font-size: 1.2rem;
 }
 
 .wrapper{
   display: flex;
+  &--reviews{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  &--colored{
+    background: $mainBlue;
+  }
 }
 
+.section-title{
+    font-size: 2.2rem;
+    font-weight: 300;
+    text-align: center;
+
+    &--blue{
+        color:$mainBlue;
+    }
+
+    &--colored{
+        color:$mainGrey;
+    }
+    &--large{
+      font-size: 3.2rem;
+      font-weight: 600;
+    }
+    &--summary{
+      font-size: 1.5rem;
+      font-weight: lighter;
+      line-height: 35px;
+      color: $mainAqua;
+    }
+}
 
 .site-footer{
-    background-color: $mainBlue;
-    color: #FFF;
+    background-color: $mainGrey;
+    color: $mainBlue;
     padding: .5rem 0;
     text-align: center;
 
@@ -110,6 +159,17 @@ body{
             margin-right: 1.4rem;
         }
     }
+}
+
+.footer--signature{
+  color: grey;
+  font-size: 12px;
+  font-weight: lighter;
+}
+
+.footer--signature a {
+    color: grey;
+    text-decoration: none;
 }
 
 .social_icon{

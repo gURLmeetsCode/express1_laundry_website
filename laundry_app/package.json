@@ -11,6 +11,7 @@
     "node-yelp-api": "^1.1.0",
     "oauthsimple": "0.0.1",
     "react": "^15.6.1",
+    "react-bootstrap": "^0.31.1",
     "react-dom": "^15.6.1",
     "react-google-maps": "^7.2.0",
     "react-image-gallery": "^0.8.3",
